@@ -2,9 +2,11 @@
 <head>
 	<title> Assignment </title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body style="margin-right: 0px;">
+	<div id="body" style="width: 100%">
 	<div id="div1">
 		<img class="img1" src="google.png" />
 		<ul id="horizontal-list">
@@ -13,7 +15,7 @@
 				<li class="li">PORTFOLIO</li>
 				<li class="li">OUR TEAM</li>
 				<li class="li">PLANS</li>
-				<li class="li">CONTACT</li>
+				<li class="li" style="margin-right: 30px;">CONTACT</li>
 		</ul>
 	</div>
 	<div class="div3">
@@ -28,13 +30,14 @@
 			</p>
 		</div>
 	</div>
-	<div id="div8">
+	<div id="div8" class="div3">
 		<div id="div6" class="div4">
 				<div id="div39">
 				<div class="div2" id="div2"> Our</div> Expertise
 				<br/><br/>
 				</div>
 			<img class="img2" src="bar.png" />
+			
 		</div>	
 
 		<div id="div7">
@@ -135,23 +138,24 @@
 		<img src="got1.jpg" class="img">
 	</div>
 	<div id="div21" class="div3">
-		
-			<center>
-			<table  id="table" cellspacing="10px" cellpadding="10px">
-				<tr>
-					<th class="th">200</th>
-					<th class="th">300</th>
-					<th class="th">400</th>
-					<th class="th">500</th>
-				</tr>
-				<tr>
-					<td class="td">website</td>
-					<td class="td">website</td>
-					<td class="td">website</td>
-					<td class="td">website</td>
-				</tr>
-			</table>
-			</center>
+		<div class="div41" id="div41">
+			<p class="web"> 200</p> <br/>
+			<p class="web1"> Web Design</p>
+		</div>
+		<div class="div41" id="div42">
+			<p class="web"> 300</p> <br/>
+			<p class="web1"> Web Design</p>
+		</div>
+		<div class="div41" id="div42">
+			<p class="web"> 400</p> <br/>
+			<p class="web1"> Web Design</p>
+		</div>
+		<div class="div41" id="div42">
+			<p class="web"> 500 </p> <br/>
+			<p class="web1"> Web Design</p>
+		</div>
+
+			
 	</div>
 	<div id="div38" class="div3">
 		<img src="mountain.png" class="img6">
@@ -193,7 +197,8 @@
 			Basic
 			<br/><br/>
 			<center>
-				$<font size="+7">29</font>/mo
+				$<font size="+7">29</font>
+				<font color="#cccccc">/mo
 			</center>
 			<br/>
 			
@@ -201,8 +206,8 @@
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
-			<center><H5>1 Logo Design</H5></center>
-			<center><H5>CHOOSE PLAN</H5></center>
+			<center><H5>1 Logo Design</H5></center></font>
+			<center><H5> <font color="grey"> CHOOSE PLAN </font> </H5></center>
 
 
 		</div>
@@ -210,45 +215,49 @@
 			Intermediate
 			<br/><br/>
 			<center>
-				$<font size="+7">39</font>/mo
+				$<font size="+7">39</font>
+				<font color=" #cccccc">/mo
 			</center> <br/>
 			<center><H5>1 Logo Design</H5></center>	
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
-			<center><H5>1 Logo Design</H5></center>
-			<center><H5>CHOOSE PLAN</H5></center>
+			<center><H5>1 Logo Design</H5></center> </font>
+			<center><H5><font color="grey">CHOOSE PLAN </font> </H5></center>
 		</div>
 		<div class="div27" id="div28">
 			Advanced
 			<br/><br/>
 			<center>
-				$<font size="+7">49</font>/mo
+				$<font size="+7">49</font>
+				<font color=" #cccccc">/mo
 			</center> <br/>
 			<center><H5>1 Logo Design</H5></center>	
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
 			<center><H5>1 Logo Design</H5></center>
-			<center><H5>1 Logo Design</H5></center>
-			<center><H5>CHOOSE PLAN</H5></center>
+			<center><H5>1 Logo Design</H5></center> </font>
+			<center><H5><font color="grey">CHOOSE PLAN </font> </H5></center>
 		</div>
 	</div>
 	<div id="div29" class="div3">
 		<div id="div30" class="div4">
-			<div id="div2" class="div2"> Get</div> In Touch 
+			<div id="div2" class="div2"> Get</div> in Touch 
 			<br/><br/><br/>
-			<font size="-1">Your Name</font>
-			<hr/>
-			<br/>
-			<font size="-1">Your Email</font>
-			<hr/>
-			<br/>
-			<font size="-1">Your Message</font>
-			<br/><br/><br/><br/>
+			<form action="">
+				<input type="text" name="name" placeholder="        Your Name" class="formelement">
+				<hr class="hr1" /> 
+				<input type="text" name="email" placeholder="       Your Email" class="formelement">
+				<hr class="hr1" />
+				<textarea  name="msg"  rows="13" cols="62"  id="textarea" class="formelement">     Your Message </textarea>
+			
+			
 			<hr class="hr1"/>
 			<div id="div31">
-				<font size="+1">Send Message</font>
+				<input type="button" class="button" value="SEND MESSAGE">
+			
 			</div>
+		</form>
 		</div>
 
 		<div id="map">
@@ -259,7 +268,7 @@
 		<center>
 			<img id="img7" src="google.png" />
 			<br/> <br/>
-			<hr width="10%"/>
+			<hr  style="border-color: yellow;"width="10%"/>
 		</center> <br/><br/>
 		<div id="div33">
 			<ul id="horizontal-list1">
@@ -270,14 +279,19 @@
 				<li class="li">PLANS</li>
 				<li class="li">CONTACT</li>
 			</ul>
+			
 			<center>  Address  Address  Address Address</center> <br/>
 			<center>+91-123456789</center> <br/>
 			<center>Email@Email.com</center>
 		</div>
 	</div>
 	<div id="div34" class="div3">
-		<center>&copy 2016 My Theme</center>
-	<div>
+		<center>&copy 2016 My Theme</center> 
+	</div>
+</div>	
+</body>
+</html>
+
 				
 
 
