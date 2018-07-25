@@ -1,3 +1,8 @@
+
+	#body{
+		margin-right: 0px;
+		
+	}
 	#div1{
   		font-size: 15px;
   		font-family:arial;
@@ -7,11 +12,13 @@
   		width:1266px;
 
  	}
-
-
- 	
  	.li{
  		margin-left: 23px;
+ 		
+ 	}               
+
+
+ 	.abc{
  		
  	}
 	#horizontal-list {
@@ -32,6 +39,7 @@
 	}
 	#horizontal-list li {
 		display: inline;
+		text-decoration:none;
 	}
 	.img{
 		width: 100%;
@@ -153,11 +161,7 @@
 	}
 	#div9{
 		height: 260px;
-<<<<<<< HEAD
-		float: left;
-=======
 		
->>>>>>> changes
 	}
 	.div10{
 		float: left;
@@ -200,11 +204,7 @@
 		line-height: 17px;
 	}
 	#div14{
-<<<<<<< HEAD
-		height: 262px;
-=======
 		height: 230px;
->>>>>>> changes
 	
 	}
 	#div15{
@@ -220,6 +220,10 @@
     	padding-right: 90px;
 	    height: 60px;
     	float: left;
+    	font-size: 15px;
+  		font-family:arial;
+  		font-weight: 700;
+  		color: grey;
 
 	}
 	.img5{
@@ -254,7 +258,7 @@
     	text-align: center;
     	padding-left: 300px;
     	padding-right: 300px;
-    	font-family:Arial, Helvetica, sans-serif;
+    	font-family: sans-serif;
     	line-height: 20px;
     	color:grey;
     	font-weight: bold;
@@ -284,13 +288,13 @@
 	}
 	.web{
 		font-size: 35px;
-		font-family:Arial, Helvetica, sans-serif;
+		font-family:sans-serif;
 		font-weight: 800;
 	}
 	.web1{
 		color:blue;
 		font-size: 12px;
-		font-family:Arial, Helvetica, sans-serif;
+		font-family:sans-serif;
 		margin-top:-44px;
 		font-weight: 700;
 	}
@@ -305,9 +309,9 @@
 		height: 470px;
 	}
 	#div23{
-		margin-left:130px;
-		margin-top: 100px;
-		width:1100;
+		padding-left:130px;
+		padding-top: 100px;
+		width:1100px;
 		float: left;
 	}
 	.div24{
@@ -329,6 +333,7 @@
 		height:730px;
 		margin-top: 100px;
 		background-color: #cccccc;
+		position: relative;
 	}
 	.div27{
 		float: left;
@@ -354,7 +359,7 @@
     	padding-top: 40px;
     	padding-left: 85px;
     	width: 513px;
-    	margin-right: 125px;
+    	padding-right: 125px;
 	}
 	#div31{
 		float: left;
@@ -442,3 +447,5 @@
 		letter-spacing: -.5px;
 	}
 
+
+}
