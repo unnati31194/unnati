@@ -150,7 +150,11 @@
 	}
 	#div9{
 		height: 260px;
+<<<<<<< HEAD
 		float: left;
+=======
+		
+>>>>>>> changes
 	}
 	.div10{
 		float: left;
@@ -193,13 +197,17 @@
 		line-height: 17px;
 	}
 	#div14{
+<<<<<<< HEAD
 		height: 262px;
+=======
+		height: 230px;
+>>>>>>> changes
 	
 	}
 	#div15{
 		float: left;
    	    width: 505px;
-    	height: 198px;
+    	height: 60px;
     	padding-top: 100px;
     	padding-left: 130px;
 	}
@@ -207,7 +215,7 @@
 	    padding-top: 100px;
 	    padding-left: 23px;
     	padding-right: 90px;
-	    height: 199px;
+	    height: 60px;
     	float: left;
 
 	}
@@ -216,7 +224,7 @@
 		max-height:100%;
 	}
 	#div17{
-		height:660px;
+		height:366px;
 	}
 	#div18{
 		height:53px;

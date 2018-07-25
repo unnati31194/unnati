@@ -1,18 +1,31 @@
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 1300px)
+
 {
-	#div1{
-		    padding-right: 10px;
-    width: 1260px;
+	#div1,#div17{
+		width: 100%;
 
 	}
-	#div7{
-		width: 640px;
+	
+	#div5{
+		margin-left: 9%;
+		width: 50%;
+
 	}
-	.img6{
-		width: 1284px;
-		height: 550px;
+
+	.img4,.img{
+		width: 100%;
 	}
-}
+	#image{
+		width: 100%;
+	}
+	
+	#div17{
+		height: auto;
+	}
+	.mediaq1{
+		width: 100%;
+	}
+	
 
 	
 
