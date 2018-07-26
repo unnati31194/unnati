@@ -1,0 +1,157 @@
+.d-flex-align-center{
+	display: flex;
+	align-items: center;
+}
+.position-relative{
+	position: relative;
+	font-size: 45px;
+}
+.main-container{
+	padding-left: 30px;
+	padding-right: 30px; 
+}	
+.about{
+	background: lightgray;
+	overflow: hidden;
+	padding: 50px 0;
+}		
+.about .left-side{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+.about .left-side h1:before{
+	background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    bottom: -2px;
+}
+.about .right-side{
+	width: 70%;
+	float: left;
+	text-align: justify;	
+}
+.exp-container{
+	padding-left: 110px;
+	padding-right: 30px; 
+}
+.our-expertise{
+	overflow: hidden;
+	padding: 50px 0;
+}
+.our-expertise .heading{
+	width: 39%;
+	text-align: center;
+	display: block;
+}
+.our-expertise .left-side{
+	flex: 40%;
+	float: left;
+	align-content: center;
+	
+}
+.our-expertise .heading h1:before{
+	background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    bottom: -2px;
+}
+.border {
+    border: 1px solid #ccc;
+    background-color: lightgray;
+    width:380px;
+    height: 2px;
+}
+.grey{
+    background-color: black;
+    height: 4px;
+   	margin-top: -1px;
+}
+.name{
+	float: left;
+	margin-top: 3px;
+	}
+.number{
+	float: left;
+	margin-top: 3px;
+}
+.bar{
+	float: left;
+	width: 385px;
+	height: 21px;
+	margin-top: 19px;
+	font-size: 14px;
+	color: grey;
+	font-family: arial;
+	letter-spacing: -.5px;
+	flex-direction: column;
+}
+.our-expertise .right-side{
+	flex: 60%;
+	float: left;
+	text-align: justify;	
+}
+.graphic-design{
+	
+	overflow: hidden;
+	padding: 50px 0;
+}
+.graphic-design .image{
+	
+	float: left;
+}
+.graphic-design img{
+	width: 50px;
+
+}
+.graphic-design .left-side{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+.graphic-design .middle-side{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+.graphic-design .right-side{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 767px){
+	.d-inherit-767{
+		display: inherit;
+	}
+	.about .left-side{
+		width: 100%;
+	}
+	.about .right-side{
+		width: 100%;
+	}
+	.our-expertise .heading{
+		width: 100%;
+	}
+	.our-expertise .left-side{
+		width: 100%;
+	}
+	.our-expertise .right-side{
+		width: 100%;
+	}
+	.graphic-design .left-side{
+		width: 100%;
+	}
+	.graphic-design .middle-side{
+		width: 100%;
+	}
+	.graphic-design .right-side{
+		width: 100%;
+	}
+}

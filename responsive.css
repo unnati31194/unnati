@@ -5,7 +5,7 @@
 	height: 377px;
 }
 
-#div4,#div39{
+#div4{
 	margin-left: 8%;
 	height: auto;
 	padding-bottom: 2%;
@@ -15,30 +15,91 @@
 	width: 90%;
 	padding: 5%;
 	height: auto;
+	float: left;
 }
 #div6,#div9,.div9{
 	height: auto;
 }
-#div7{
-	
+#div6{
+	padding: 5%;
+	width: 90%;
 }
 .bar{
-	width: 100%;
+	width: 95%;
 	padding-right: 5%;
 }
 #div39{
 	width: 80%;
-	padding-right: 5%;
+	padding:  0% 5% 2% 10%;
+	margin: 0%;
+	height: auto;
+}
+#div8{
+	height: auto;
+	float: left;
+
 }
 #div9{
 	width: 100%;
+	height: auto;
+	float: left;
 
 }
 .div9{
-	width: 90%;
-	padding: 0% 5% 5% 5%;
+	width: 85%;
+	padding: 0% 5% 5% 10%;
 	margin: 0%;
+	float: left;
 }
+.div10{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.div11{
+	float: left;
+	width: 66%;
+}
+#div11{
+	width: 100%;
+}
+#div12{
+padding: 5%;
+width: 90%;
+height: auto;
+}
+#div13,#div14{
+	height: auto;
+	width: 100%;
+	
+	float: left;
+}
+#div14{
+	padding-bottom: 5%;
+}
+#div15{
+	padding-left: 25%;
+	padding-top: 15%;
+	width: 50%;
+
+}
+#div16{
+	padding:0px ;
+	width: 100%;
+	float: left;
+}
+#div16 ul{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+#div16 ul li {
+	margin: 0px;
+	padding-left: 5%;
+}
+#div17{
+	float: left;
+}
+
 }
 
 @media only screen and (min-width: 640px)  and (max-width: 922px){
@@ -114,6 +175,7 @@
 	}
 	#div15{
 		padding: 10% 30%;
+		padding-bottom: 0px;
 		
 	}
 	#div19{
