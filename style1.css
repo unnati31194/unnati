@@ -1,6 +1,6 @@
 .d-flex-align-center{
 	display: flex;
-	align-items: center;
+	
 }
 .position-relative{
 	position: relative;
@@ -34,7 +34,7 @@
 	text-align: justify;	
 }
 .exp-container{
-	padding-left: 110px;
+	padding-left: 60px;
 	padding-right: 30px; 
 }
 .our-expertise{
@@ -50,6 +50,7 @@
 	flex: 40%;
 	float: left;
 	align-content: center;
+	padding-right: 20px;
 	
 }
 .our-expertise .heading h1:before{
@@ -95,34 +96,75 @@
 	float: left;
 	text-align: justify;	
 }
+
 .graphic-design{
 	
 	overflow: hidden;
 	padding: 50px 0;
 }
-.graphic-design .image{
-	
-	float: left;
+.graphic-container{
+	padding-left: 60px;
+	padding-right: 30px; 
+}	
+
+.graphic-design .image {
+    flex: 20%;
+    
+    padding-right: 30px;
 }
 .graphic-design img{
-	width: 50px;
+	width: 100%;
 
 }
 .graphic-design .left-side{
-	width: 33%;
-	float: left;
-	text-align: center;
+	flex: 33.33%;
+	display: flex;
+	text-align: justify;
+	padding-right: 50px;
 }
 .graphic-design .middle-side{
-	width: 33%;
-	float: left;
-	text-align: center;
+	flex: 33.33%;
+	display: flex;
+	text-align: justify;
+	padding-right: 50px;
 }
 .graphic-design .right-side{
-	width: 33%;
-	float: left;
-	text-align: center;
+	flex: 33.33%;
+	display: flex;
+	text-align: justify;
+	padding-right: 50px;
 }
+.graphic-design .side-content{
+flex:70%;
+}
+.magic{
+	background: lightgray;
+	overflow: hidden;
+	padding:0px;
+}
+
+.magic .left-side{
+	flex: 50%;
+}
+.magic .left-side img{
+	width: 100%;
+	height: 100%;
+	
+}
+.magic .right-side{
+	flex: 40%;
+	text-align: justify;
+	padding: 40px ;
+}
+.magic .right-side h1:before{
+	background: #fff617;
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 3px;
+    bottom: -30px;
+}
+
 
 
 /*responsive*/
@@ -147,11 +189,28 @@
 	}
 	.graphic-design .left-side{
 		width: 100%;
+		padding-right: 5px;
 	}
 	.graphic-design .middle-side{
 		width: 100%;
+		padding-right: 5px;
+	
 	}
 	.graphic-design .right-side{
 		width: 100%;
+		padding-right: 5px;
+	
 	}
+	.graphic-design .image {
+    flex: 10%;  
+	}
+	.graphic-design .side-content{
+flex:80%;
+}
+.magic .left-side{
+	width: 100%;
+}
+.magic .right-side{
+	width: 90%;
+}
 }

@@ -96,10 +96,10 @@
 	
 	#div4{
 		float: left;
-    	margin-left: 100px;
+    	margin-left: 70px;
     	padding-left: 53px;
     	padding-top: 100px;
-    	padding-right: 103px;
+    	padding-right: 125px;
    	    padding-bottom: 120px;
  
     }
@@ -142,7 +142,7 @@
     }
     #div7{
     	float: left;
-    	width: 660px;
+    	width: 645px;
     	margin-top: 131px;
    	    text-align: justify;
     	font-size: 15px;
@@ -155,7 +155,7 @@
     	float: left;
     	width: 330px;
     	height: 200px;
-    	margin-left: 60px;
+    	margin-left: 75px;
 	}
 	#div9{
 		height: 260px;
@@ -185,12 +185,12 @@
     }
 	#div12{
 		float: left;
-	    padding-left: 137px;
+	    padding-left: 98px;
 	    padding-top: 38px;
-	    padding-right: 50px;
+	    padding-right: 59px;
 	    background-color: lightgrey;
 	    height: 463px;
-	    width: 455px;
+	    width: 485px;
     }
 	#p2{
 		color: lightgrey;
