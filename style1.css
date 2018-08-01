@@ -641,6 +641,9 @@ input{
 	.position-relative{
 		font-size:30px;
 	}
+	.top-image-container{
+		margin-bottom: -4px;
+	}
 	.about .main-container{
 		padding-left: 30px;
 		padding-right:30px;
