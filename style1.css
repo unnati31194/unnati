@@ -13,7 +13,8 @@ html{
 .top-bar .left-side{
 	width: 10%;
 	float:left;
-	padding: 10px 0;
+	padding: 10px 0px 10px 10px;
+	box-sizing: border-box;
 }
 .top-bar .left-side img{
 	width: 40px;
@@ -40,6 +41,10 @@ html{
 .top-bar li{
 	padding: 1em;
 
+}
+.top-bar .navigation-top a{
+	text-decoration: none;
+	color: black;
 }
 .open-slide{
   position:absolute;
@@ -296,6 +301,10 @@ html{
 	padding: 1em;
 	padding-left: 0px;
 }
+.portfolio .navigation-middle a{
+	text-decoration: none;
+	color: black;
+}
 .open-slide-middle{
 	position:relative;
 	top:20px;
@@ -550,7 +559,10 @@ input{
 .bottom-container img{
 	width: 50px;
 }
-
+.bottom hr{
+	border-color: yellow;
+	width: 50%;
+}
 .bottom .navigation{
 	float: left;
 	width: 100%;
@@ -620,8 +632,16 @@ input{
 }
 
 @media screen and (max-width: 800px){
+
 	.top-bar-container{
-		padding: 0px 30px;
+		padding: 0px;
+	}
+	.top-bar .left-side{
+		padding-top: 12px;
+		padding-left: 20px;
+	}
+	.top-bar .left-side img{
+		width: 35px;
 	}
 	.top-bar .right-side .navigation-top{
 	display: none;
