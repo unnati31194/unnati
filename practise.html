@@ -4,6 +4,22 @@
 	<title> Sample</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style1.css">
+	<script>
+    function openSlideMenu1(){
+      document.getElementById('side-menu').style.width = '100%';
+    }
+
+    function closeSlideMenu1(){
+      document.getElementById('side-menu').style.width = '0';
+    }
+	 function openSlideMenu2(){
+      document.getElementById('side-menu-middle').style.width = '100%';
+    }
+
+    function closeSlideMenu2(){
+      document.getElementById('side-menu-middle').style.width = '0';
+    }
+  </script>
 </head>
 
 <body style="margin: 0px">
@@ -13,6 +29,17 @@
 			<img src="google.png">
 		</div>
 		<div class="right-side">
+			<nav class="navbar">
+		    <span class="open-slide-middle">
+		      <a href="#" onclick="openSlideMenu1()">
+		        <svg width="40" height="30">
+		            <path d="M0,5 40,5" stroke="#000" stroke-width="5"/>
+		            <path d="M0,14 40,14" stroke="#000" stroke-width="5"/>
+		            <path d="M0,23 40,23" stroke="#000" stroke-width="5"/>
+		        </svg>
+		      </a>
+		    </span>
+
 			<ul class="navigation-top">
 				<li>ALL</li>
 				<li>ABOUT US</li>
@@ -21,8 +48,19 @@
 				<li>PLANS</li>
 				<li>CONTACT</li>
 			</ul>
+		</nav>
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu1()">&times;</a>
+			<a href="#">ALL</a>
+			<a href="#">ABOUT US</a>
+			<a href="#">PORTFOLIO</a>
+			<a href="#">OUR TEAM</a>
+			<a href="#">CONTACT</a>
+
 		</div>
-	</div>	
+
+		</div>
+	</div>
 </section>
 
 <section class="top-image">
@@ -37,7 +75,12 @@
 			<h1 class="position-relative">About us</h1>
 		</div>
 		<div class="right-side">
-			<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache license version 2.0.AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And it all happens within the browser, making it an ideal partner with any server technology.</p>
+			<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with 
+			additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands 
+			of developers around the world. It is licensed under the Apache license version 2.0.AngularJS is a structural framework for dynamic 
+			web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components 
+			clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And 
+			it all happens within the browser, making it an ideal partner with any server technology.</p>
 			
 		</div>
 	</div>
@@ -72,7 +115,12 @@
 			</div>
 		</div>
 		<div class="right-side">
-			<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache license version 2.0.AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And it all happens within the browser, making it an ideal partner with any server technology.</p>
+			<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with 
+			additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands 
+			of developers around the world. It is licensed under the Apache license version 2.0.AngularJS is a structural framework for dynamic web
+			apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly
+			and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And it all happens
+			within the browser, making it an ideal partner with any server technology.</p>
 		</div>
 	</div>
 </section>
@@ -123,7 +171,11 @@
 		<div class="right-side">
 			<h1 class="position-relative">Let's make magic</h1>
 			<br/>
-			<p>Graphic design is the process of visual communication and problem-solving through the use of typography, photography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term "graphic design" is used synonymously. Graphic designers create and combine symbols, images and text to form visual representations of ideas and messages.
+			<p>Graphic design is the process of visual communication and problem-solving through 
+			the use of typography, photography and illustration. The field is considered a subset
+			of visual communication and communication design, but sometimes the term "graphic design"
+			is used synonymously. Graphic designers create and combine symbols, images and text to form visual 
+			representations of ideas and messages.
 			</p>
 		</div>
 	</div>
@@ -135,6 +187,17 @@
 			<h1 class="position-relative">Portfolio</h1>
 		</div>
 		<div class="right-side">
+		<nav class="navbar">
+		    <span class="open-slide-middle">
+		      <a  onclick="openSlideMenu2()">
+		        <svg width="40" height="30">
+		            <path d="M0,5 40,5" stroke="#000" stroke-width="5"/>
+		            <path d="M0,14 40,14" stroke="#000" stroke-width="5"/>
+		            <path d="M0,23 40,23" stroke="#000" stroke-width="5"/>
+		        </svg>
+		      </a>
+		    </span>
+
 			<ul class="navigation-middle">
 				<li>ALL</li>
 				<li>BRANDING</li>
@@ -142,6 +205,15 @@
 				<li>PHOTOGRAPHY</li>
 				<li>BLOG</li>
 			</ul>
+			</nav>
+			<div id="side-menu-middle" class="side-nav">
+				<a  class="btn-close" onclick="closeSlideMenu2()">&times;</a>
+				<a href="#">ALL</a>
+				<a href="#">BRANDING</a>
+				<a href="#">DESIGN</a>
+				<a href="#">PHOTOGRAPHY</a>
+				<a href="#">BLOG</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -166,8 +238,10 @@
 
 <section class="text">
  	<div class="text-container d-flex-align-center d-inherit-767">
- 		<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source and used by thousands of developers around the world. <br/> <br/>BARRY ALLEN
+ 		<p>AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source and used by developers around the world.
+		<br/> <br/> <center> BARRY ALLEN </center>
 		</p>
+	</div>
 </section>
 
 <section class="top-image">
@@ -286,10 +360,11 @@
 		<div class="left-side">
 			<h1 class="position-relative">Get in Touch </h1>
 			<form>
-				<input type="text" name="name" placeholder="Your Name" class="formelement">
+				<input type="text" name="name" placeholder="Your Name">
 				<hr/> 
-				<input type="text" name="email" placeholder="Your Email" class="formelement">
-				<hr/>
+				<br/>
+				<input type="text" name="email" placeholder="Your Email">
+				<hr/><br/>
 				<textarea  name="msg"  rows="13" cols="62"  id="textarea" class="formelement">Your Message</textarea>
 				<hr/>
 					<input type="button" class="button" value="SEND MESSAGE">

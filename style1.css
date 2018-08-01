@@ -11,17 +11,21 @@ html{
 	padding:0px  30px;
 }
 .top-bar .left-side{
-	width: 3%;
+	width: 10%;
 	float:left;
 	padding: 10px 0;
 }
 .top-bar .left-side img{
-	width: 100%;
+	width: 40px;
 	
 }
 .top-bar .right-side{
-	width: 97%;
+	width: 90%;
 	float:left;
+}
+.navbar{
+  overflow:hidden;
+  height:63px;
 }
 .top-bar .navigation-top{
 	list-style: none;
@@ -36,6 +40,42 @@ html{
 .top-bar li{
 	padding: 1em;
 
+}
+.open-slide{
+  position:absolute;
+  top:20px;
+  right:32px;
+
+}
+.top-bar .side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  right:0;
+  background-color:#111;
+  opacity:1;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+	text-align: center;
+}
+.top-bar .side-nav .btn-close {
+  position:absolute;
+  top:0;
+  right:55px;
+  font-size:36px;
+  margin-left:50px;
 }
 .top-image{
 	overflow: hidden;
@@ -81,7 +121,8 @@ html{
 .about .right-side{
 	width: 70%;
 	float: left;
-	text-align: justify;	
+	text-align: justify;
+	line-height: 1.3;	
 }
 .exp-container{
 	padding-left: 60px;
@@ -92,9 +133,10 @@ html{
 	padding: 50px 0;
 }
 .our-expertise .heading{
-	width: 33%;
+	width: 100%;
 	padding-left: 60px;
 	display: block;
+	box-sizing: border-box;
 }
 .our-expertise .heading h1:before{
 	background: #fff617;
@@ -110,6 +152,16 @@ html{
 	align-content: center;
 	padding-right: 40px;
 	
+}
+.bar{
+	float: left;
+	width: 100%;
+	margin-top: 19px;
+	font-size: 14px;
+	color: grey;
+	font-family: arial;
+	letter-spacing: -.5px;
+	flex-direction: column;
 }
 .border {
     border: 1px solid #ccc;
@@ -130,20 +182,12 @@ html{
 	float: left;
 	margin-top: 3px;
 }
-.bar{
-	float: left;
-	width: 100%;
-	margin-top: 19px;
-	font-size: 14px;
-	color: grey;
-	font-family: arial;
-	letter-spacing: -.5px;
-	flex-direction: column;
-}
+
 .our-expertise .right-side{
 	flex: 60%;
 	float: left;
-	text-align: justify;	
+	text-align: justify;
+	line-height: 1.3;	
 }
 
 .graphic-design{
@@ -183,6 +227,7 @@ html{
 }
 .graphic-design .side-content{
 	flex:70%;
+	line-height: 1.3;
 }
 .magic{
 	background: lightgray;
@@ -202,6 +247,7 @@ html{
 	flex: 40%;
 	text-align: justify;
 	padding: 70px ;
+	line-height: 1.3;
 }
 .magic .right-side h1:before{
 	background: #fff617;
@@ -222,7 +268,6 @@ html{
 .portfolio .left-side{
 	width: 30%;
 	float: left;
-	text-align: center;
 }
 .portfolio .left-side h1:before{
 	background: #fff617;
@@ -231,6 +276,9 @@ html{
     width: 45px;
     height: 3px;
     bottom: -2px;
+}
+.portfolio .position-relative{
+	margin-top: 15px;
 }
 .portfolio .right-side{
 	width: 70%;
@@ -248,6 +296,33 @@ html{
 	padding: 1em;
 	padding-left: 0px;
 }
+.open-slide-middle{
+	position:relative;
+	top:20px;
+	right:32px;
+	float:right;
+}
+.portfolio .side-nav{
+  height: 100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  right:0;
+  background-color:#111;
+  opacity:1;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+.portfolio .side-nav .btn-close {
+  position:absolute;
+  top: 10px;
+  right:70px;
+  font-size:36px;
+  margin-left:50px;
+}
+
 .portfolio-image{
 	overflow: hidden;
 	padding:  0;
@@ -257,8 +332,9 @@ html{
 	padding: 5px;
 }
 .portfolio-image .images{
-	flex: 24%;
+	flex: 25%;
 	padding: 3px;
+	box-sizing: border-box;
 }
 
 .portfolio-image img{
@@ -284,6 +360,8 @@ html{
 	margin: auto; 
 	text-align: center;
 	width: 50%;
+	display: block;
+	line-height: 1.3;
 
 }
 .middle-column{
@@ -293,11 +371,13 @@ html{
 .column-container{
 	padding-left: 60px;
 	padding-right: 60px;
+	flex-flow: row wrap;
 }
 .middle-column .column{
 	flex: 25%;
 	padding-right: 30px;
 	text-align: center;
+	box-sizing: border-box;
 }
 .middle-column .column .qty{
 	font-size: 40px; 
@@ -314,7 +394,8 @@ html{
 	padding-top: 50px 
 }
 .our-team .heading{
-	width:530%;
+	width:100%;
+	box-sizing: border-box;
     padding-left: 64px;
     display: block;
 }
@@ -330,10 +411,10 @@ html{
 	padding-left:64px;
 }
 .our-team img{
-	max-width: 100%;
+	width: 100%;
 }
 .our-team .left-side, .our-team .middle-side, .our-team .right-side{
-	flex: 33.33%;
+	width: 33.33%;
 	text-align: center;
 	padding-right: 50px;
 }
@@ -356,8 +437,8 @@ html{
     bottom: -2px;
 }
 .pricing-container{
-	padding-left: 100px;
-	padding-right:100px; 
+	padding-left: 80px;
+	padding-right:80px; 
 }	
 
 .pricing-plan .left-side , .pricing-plan .middle-side  {
@@ -370,7 +451,8 @@ html{
 	background: white;
 }
 .pricing-plan .column-heading{
-	margin: 10px 25px 0px 20px;
+	padding-top: 17px;
+	padding-left: 17px;
 }
 .pricing-plan .column-text{
 	color: #757575;
@@ -380,7 +462,8 @@ html{
 .pricing-plan .column-bottom{
 	color: #424242;
 	font-size: 15px; 
-	margin-top: 45px;
+	margin-top: 25px;
+	padding-bottom: 30px;
 }
 .form-map{
 	
@@ -420,6 +503,19 @@ html{
 	border-color: black;
 	
 }
+input{
+		border:none;
+		color: black;
+    	border: none;
+    	background: transparent;
+    	outline:none;
+    	width: 100%;
+    	font-size: 15px;
+	}
+	.form-map .left-side hr{
+		margin-top: -2px;
+	}
+
 .formelement{
 		border:none;
 		color: lightgrey;
@@ -439,17 +535,15 @@ html{
 	padding: 30px;
 	
 }	
-.bottom-container{
-	margin: auto; 
+.bottom-container{ 
 	text-align: center;
-	width: 50%;
 	flex-direction: column;
 
 }
 .bottom .bottom-image{
 	margin: auto; 
 	text-align: center;
-	width: 50%;
+	width: 40%;
 	float: left;
 
 }
@@ -502,12 +596,6 @@ html{
 
 /*responsive*/
 @media screen and (max-width: 450px){
-	.portfolio .navigation-middle{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		text-align: center;
-	}
 	.column-container{
 		display: flex;
 		flex-direction: column;
@@ -515,44 +603,48 @@ html{
 		box-sizing: border-box;
 	}
 }
-@media screen and   (max-width: 624px){
-		.top-bar .right-side .navigation-top{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		text-align: center;
+@media screen and   (min-width: 801px){
+
+		.open-slide{
+			display:none;
+		}
+		.open-slide-middle{
+			display:none;
+		}
+
+}
+@media screen and (max-width: 1000px){
+	.position-relative{
+		font-size: 32px;
 	}
 }
-@media screen and (max-width: 702px){
+
+@media screen and (max-width: 800px){
 	.top-bar-container{
-		display: flex;
-		flex-direction: column;
-		padding: 0px;
+		padding: 0px 30px;
 	}
-	.top-bar .left-side{
-	margin: auto; 
-	text-align: center;
-	width: 100%;
-	float: left;
+	.top-bar .right-side .navigation-top{
+	display: none;
+
+
 	}
-	.top-bar .left-side img{
-		width: 50px;
-	}
-	.top-bar .right-side{
-		width: 100%;
-		float: left;
-	}
-	.top-bar .right-side li{
-		
-		
+	.portfolio .right-side .navigation-middle{
+	display: none;
 	}
 
 }
+
 @media screen and   (max-width: 767px){
 	.d-inherit-767{
 		display: inherit;
 	}
-
+	.position-relative{
+		font-size:30px;
+	}
+	.about .main-container{
+		padding-left: 30px;
+		padding-right:30px;
+	}
 	.about .left-side ,.pricing-plan .heading , .our-team .heading{
 		width: 100%;
 		text-align: center;
@@ -562,12 +654,34 @@ html{
 	.about .right-side{
 		width: 100%;
 		text-align: justify;
+		font-size: 90%;
+		line-height: 1.4;
 	}
-	.our-expertise .heading , .portfolio .left-side{
+	.our-expertise .heading{
 		width: 100%;
+		padding-left:0px;
+		text-align:center;
 	}
-	.our-expertise .left-side, .our-expertise .right-side{
+	.exp-container, .graphic-container{
+		padding-left:30px;
+		padding-right:30px;
+	}
+	.our-expertise .left-side{
 		width: 100%;
+		padding-right:0;
+		margin: auto;
+		box-sizing: border-box;
+
+	}
+	.our-expertise .right-side{
+		width: 100%;
+		font-size:90%;
+		line-height: 1.4;
+
+	}
+	
+	.graphic-design{
+		padding-top:0px;
 	}
 	.graphic-design .left-side, .graphic-design .middle-side, .graphic-design .right-side{
 		width: 100%;
@@ -575,36 +689,75 @@ html{
 	}
 	.graphic-design .image {
   	  flex: 10%;  
+	  padding-top: 13px;
 	}
 	.graphic-design .side-content{
 		flex:80%;
+		font-size:90%;
+		line-height: 1.4;
 	}
 	.magic .left-side{
 		width: 100%;
 	}
 	.magic .right-side{
-		width: 93%;
+		width: 100%;
 		padding: 10px 20px;
+		box-sizing: border-box;
 	}
 	.magic h1{
 		text-align: center;
 	}
+	.magic .right-side p{
+		font-size:90%;
+		line-height: 1.3;
+	}
 	.portfolio-container{
 		padding: 0px;
 	}
-	.portfolio .left-side, .portfolio .right-side{
-		width: 100%;
+	.portfolio .left-side{
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 30px;
+		text-align:left;
+		
+	}
+	.portfolio .right-side{
+		width: 50%;
+		
+	}
 	
-	}
-	.portfolio .navigation-middle{
-		justify-content: space-around;
-		padding-left: 0px;
-	}
 	.portfolio-image{
 		display: flex;
 	}
+	.portfolio-image-container .images{
+		flex:50%;
+		box-sizing:border-box;
+	}
+	.text-container{
+		text-align: justify;
+		font-size: 90%;
+		width: 80%;
+		line-height: 1.4;
+	}
+	.middle-column .column-container{
+		padding:0;
+		display: flex;
+	}
+	
 	.middle-column .column{
 		padding-bottom: 15px;
+		flex: 50%;
+	}
+	.our-team .team-container{
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		padding: 0;
+	
+	}
+	.our-team .left-side , .our-team .middle-side , .our-team .right-side {
+		width: 100%;
+
 	}
 	.pricing-plan .pricing-container{
 		width: 50%;
@@ -622,7 +775,7 @@ html{
 	}
 	.form-map .left-side{
 		width: 100%;
-		padding:20px 60px 20px 100px;
+		padding:20px 60px 20px 60px;
 		box-sizing: border-box;
 	}
 	.form-map .right-side{
