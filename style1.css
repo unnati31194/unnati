@@ -87,12 +87,11 @@ html{
 }	
 .top-image-container{
 	width: 100%;
-	height: auto;
 	
 }
 .top-image-container img{
 	width: 100%;
-	height: auto;
+	height: 350px;
 }
 .position-relative{
 	position: relative;
@@ -664,7 +663,10 @@ input{
 	.top-image-container{
 		margin-bottom: -4px;
 	}
-	.about .main-container{
+.top-image-container img{
+	width: 100%;
+	height: auto;
+}	.about .main-container{
 		padding-left: 30px;
 		padding-right:30px;
 	}
