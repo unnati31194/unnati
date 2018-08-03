@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+.top-bar img{
+  width: 40px;
+}
+.top-bar .ml-auto, .portfolio .ml-auto{
+  text-align: center;
+}
+.top-image img{
+  width: 100%;
+  height: 350px;
+}
+.about  h1:before{
+  background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 60px;
+}
+.about .jumbotron{
+  margin-bottom: 0;
+  padding-bottom: 0;
+} 
+.expertise  h1:before{
+  background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 60px;
+}
+.expertise .progress{
+  margin-top: 1rem;
+  height: 4px;
+}
+.expertise .progress-bar{
+  background-color: black;
+
+}
+.expertise .name {
+  float: left;
+  margin-top: 3px;
+  font-size: 12px;
+}
+.expertise .number{
+  margin-top: 3px;
+  font-size: 12px;
+}
+.graphic-design img{
+  width: 50px;
+
+}
+.magic .container-fluid{
+  padding-left: 0;
+}
+.magic .left-image{
+  padding: 0;
+} 
+.magic .right-side{
+  padding-top: 5rem;
+  padding-left: 4rem;
+  margin-bottom: 0;
+  padding-right: 4rem;
+}
+.magic  h1:before{
+    background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 8rem;
+}
+.portfolio .navbar{
+  padding: 2rem;
+}
+.portfolio  h1:before{
+    background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 5rem;
+}
+.portfolio .col-lg-3{
+  padding: 3px;
+}
+.middle-footer{
+  background: #e9ecef;
+}
+.middle-footer h6{
+  margin-top: 0.5rem;
+}
+.middle-column h2{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.our-team  h1:before{
+    background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 4rem;
+}
+.our-team p{
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
