@@ -1,28 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
-
-
-
-
-
-
-
-
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
-}
-
-
-
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
@@ -48,6 +26,7 @@
 .about .jumbotron{
   margin-bottom: 0;
   padding-bottom: 0;
+  padding-right: 0;
 } 
 .expertise  h1:before{
   background: #fff617;
@@ -134,24 +113,104 @@
   font-size: 1rem;
   padding-top: 1rem;
 }
+.pricing-plan  h1:before{
+    background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 4rem;
+}
+.pricing-plan .col-md-3{
+  margin-right: 2.5rem;
+  margin-left: 4rem;
+}
+.pricing-plan .column{
+  margin-right:0;
+}
+.pricing-plan .jumbotron{
+  margin-bottom: 0;
+}
+.form-map .row{
+  margin-right: 0;
+}
+.form-map  h1:before{
+    background: #fff617;
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    top: 6rem;
+}
+.form-map .container-fluid{
+  padding-right: 0;
+}
+input,textarea{
+  border-bottom: 2px solid black;
+  color: black;
+  background: transparent;
+  outline:none;
+  width: 100%;
+  font-size: 15px;
+}
+.form-map button{
+  background-color: black;
+  color: white;
+}
+.footer{
+  margin-top: -7px;
+}
+.footer img{
+  width: 50px;
+}
+.footer hr{
+  height: 1.5px;
+}
+@media (max-width: 768px){
+.pricing-plan .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+ }
+ .pricing-plan .col-md-3{
+  margin-left: 0rem;
+ }
 
+ .magic .right-side{
+  padding: 2rem 1rem;
+  padding-left: 40px;
+ }
+ .magic  h1:before{
+    top: 5rem;
+}
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+}
+@media (max-width: 576px) { 
+.footer ul{
+  display: flex;
+  flex-direction: column;
+ }
+ .footer ul li{
+  padding: 0.5em;
+ }
+}
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+@media (max-width: 1140px) { 
+.pricing-plan .row .col-md-3{
+  margin-right: 0;
+ }
+}
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (max-width: 770px) { 
+.pricing-plan .row .col-md-3{
+margin-left: 1rem;
+ }
+}
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
 
 
 
