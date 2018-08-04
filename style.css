@@ -16,7 +16,7 @@
   height: 350px;
 }
 .about  h1:before{
-  background: #fff617;
+   background: #fff617;
     position: absolute;
     content: '';
     width: 45px;
@@ -29,7 +29,7 @@
   padding-right: 0;
 } 
 .expertise  h1:before{
-  background: #fff617;
+   background: #fff617;
     position: absolute;
     content: '';
     width: 45px;
@@ -190,6 +190,9 @@ h1{
 }
 }
 @media (max-width: 576px) { 
+  .about .col-md-8{
+    padding-left: 0;
+  }
 .footer ul{
   display: flex;
   flex-direction: column;
@@ -210,7 +213,12 @@ h1{
 margin-left: 1rem;
  }
 }
+@media (max-width: 400px) {
+.expertise h1{
+  font-size:1.8rem;
 
+}
+}
 
 
 
