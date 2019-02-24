@@ -1,0 +1,29 @@
+.w-nav.nav-2 data-animation="default" data-collapse="small" data-contain="1" data-duration="400" 
+  .w-container
+    nav.w-nav-menu.nav-menu role="navigation" 
+    	-if current_account.present?
+			= link_to t('.sign-out') , sign_out_path , class: 'w-nav-link nav-link-2 mt-1 mr-13', method: :get
+        -elsif current_user.present?
+            = link_to t('.sign-out') , destroy_user_session_path , class: 'w-nav-link nav-link-2 mt-1 mr-13', method: :get
+		-else
+			= link_to t('.create-link'), accounts_path , class: 'w-nav-link nav-link-2 mt-1 mr-13', method: :post
+			= link_to t('.log-in') ,user_login_path , class: 'w-nav-link nav-link-2 pointer login' 
+        - if !current_user.present?
+          .dropdown.float-right.display-block.m-2
+              button#languageDropdown.language-style.dropdown-toggle data-toggle="dropdown" role="button" 
+                  =t('language')
+              .dropdown-menu aria-labelledby="languageDropdown" 
+                  =link_to(t('english'), {locale: "en"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('chinese'), {locale: "ch"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('korean'),{locale: "ko"}, html_options = {class: "dropdown-item"}) 
+                  =link_to(t('thailand'), {locale: "th"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('japenese'),  {locale: "ja"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('bhahasa-indonesia'),  {locale: "id"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('bahasa-melayu'),  {locale: "ml"}, html_options = {class: "dropdown-item"})
+                  =link_to(t('vietnam'), {locale: "vt"}, html_options = {class: "dropdown-item"})
+
+    .w-nav-button.menu-btn
+      .w-icon-nav-menu
+    .w-nav-brand.brand-box 
+      =image_tag('whitelogo.png', class:'', width:'200')
+

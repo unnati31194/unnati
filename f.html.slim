@@ -1,0 +1,7 @@
+.container-fluid
+            - if current_user.present?
+                = render partial: "shared/header"
+                .col-md-2
+                    = render partial: "shared/sidebar"
+                .col-md-10
+                    = yield
